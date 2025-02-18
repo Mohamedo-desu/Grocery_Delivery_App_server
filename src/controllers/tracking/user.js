@@ -1,5 +1,5 @@
 import { ROLES } from "../../constants/index.js";
-import { CustomerModel, DeliveryPartnerModel } from "../../models/user.js";
+import { CustomerModel, DeliveryPartnerModel } from "../../models/UserModel.js";
 
 export const updateUser = async (req, res) => {
   try {

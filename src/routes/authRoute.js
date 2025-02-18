@@ -5,7 +5,7 @@ import {
   refreshToken,
 } from "../controllers/auth/auth.js";
 import { updateUser } from "../controllers/tracking/user.js";
-import { verifyToken } from "../middleware/auth.js";
+import { verifyToken } from "../middleware/authMiddleware.js";
 
 export const authRoutes = async (fastify) => {
   fastify.post("/customer/login", loginCustomer);

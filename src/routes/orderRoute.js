@@ -5,7 +5,7 @@ import {
   getOrders,
   updateOrderStatus,
 } from "../controllers/order/order.js";
-import { verifyToken } from "../middleware/auth.js";
+import { verifyToken } from "../middleware/authMiddleware.js";
 
 export const orderRoutes = async (fastify, options) => {
   fastify.addHook("preHandler", async (request, reply) => {
